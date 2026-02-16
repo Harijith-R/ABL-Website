@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABL | Amateur Badminton League Season 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Teko:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas class="webgl"></canvas>
+    
+    <img src="abl_logo.png" alt="ABL Logo" class="main-logo">
+
+    <main class="content-wrapper">
+        
+        <section class="scene hero-scene">
+            <div class="text-content">
+                <h1>ABL SEASON 5</h1>
+                <p>Competitive Spirit. Structured Governance.</p>
+            </div>
+        </section>
+
+        <section class="scene about-scene">
+            <div class="text-content right-align">
+                <h2>THE LEAGUE</h2>
+                <p>Founded by <strong>Binu Philip</strong>, the Amateur Badminton League sets the standard for professional team-based badminton.</p>
+                <p>Season 5 Organizing Committee: <strong>Harijith, Siyad, and Ajas</strong>.</p>
+                <div class="stats-grid">
+                    <div><h3>8</h3><span>Franchises</span></div>
+                    <div><h3>80</h3><span>Athletes</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene rules-scene">
+            <div class="rules-container">
+                <div class="section-header">
+                    <h2>OFFICIAL RULEBOOK</h2>
+                    <p>ABL Season 5 Governance & Match Format</p>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <h3>1. TIE & MATCH FORMAT</h3>
+                        <ul>
+                            <li><strong>5 Matches</strong> per Tie (3 Regular + 2 Trump).</li>
+                            <li><strong>1 Game to 30 Points</strong> per match.</li>
+                            <li><strong>Interval:</strong> 3 minutes at 15 points.</li>
+                            <li><strong>Tie-Break:</strong> Single 21-point match if teams tie on points.</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>2. TEAM COMPOSITION</h3>
+                        <ul>
+                            <li><strong>Squad Size:</strong> Strictly 10 players per team.</li>
+                            <li><strong>Mandatory:</strong> All 10 players must play one match each.</li>
+                            <li><strong>Limit:</strong> Maximum 1 match per player per tie.</li>
+                            <li><strong>Injuries:</strong> Opposing captain selects replacement.</li>
+                        </ul>
+                    </div>
+                    <div class="rule-card">
+                        <h3>3. REGULAR SCORING</h3>
+                        <table class="scoring-table">
+                            <tr><th>Match</th><th>Win</th><th>Loss</th></tr>
+                            <tr><td>M1</td><td class="win">+1</td><td class="loss">-1</td></tr>
+                            <tr><td>M2</td><td class="win">+1</td><td>0</td></tr>
+                            <tr><td>M3</td><td class="win">+1</td><td class="loss">-1</td></tr>
+                        </table>
+                    </div>
+                    <div class="rule-card trump-card">
+                        <h3>4. TRUMP SCORING & RULES</h3>
+                        <table class="scoring-table">
+                            <tr><th>Match</th><th>Win</th><th>Loss</th></tr>
+                            <tr><td>M4</td><td class="win-trump">+2</td><td class="loss">-1</td></tr>
+                            <tr><td>M5</td><td class="win-trump">+2</td><td>0</td></tr>
+                        </table>
+                        <p class="trump-note">4 Trump players must be declared 3 days prior. Cannot move between Regular and Trump.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene teams-scene">
+            <div class="teams-container">
+                <div class="section-header">
+                    <h2>THE FRANCHISES</h2>
+                    <p>Swipe to view the Season 5 Elite 8</p>
+                </div>
+                <div class="team-track">
+                    <div class="team-card"><img src="Racket Riders.jpeg" class="team-logo"><h3>RACKET RIDERS</h3><ul class="roster"><li class="captain">Akash (C)</li><li>Ginosh</li><li>Sudheesh</li><li>Dinesh</li><li>Mahesh</li><li>Ajith Mathew</li><li>Subramani</li><li>Ajas</li><li>Vivek</li><li>Faizal</li></ul></div>
+                    <div class="team-card"><img src="TEAM SMASHERS.jpeg" class="team-logo"><h3>TEAM SMASHERS</h3><ul class="roster"><li class="captain">Ganesh (C)</li><li>Kiku</li><li>Siyad</li><li>Harijith</li><li>Younus</li><li>Vishnu Raj</li><li>Babu</li><li>Nithin</li><li>Jayan</li><li>Akhil George</li></ul></div>
+                    <div class="team-card"><img src="The Defenders.jpeg" class="team-logo"><h3>THE DEFENDERS</h3><ul class="roster"><li class="captain">Denny (C)</li><li>Sunil</li><li>Anal</li><li>Sinoy</li><li>Rajesh</li><li>Karthik</li><li>Unni</li><li>Bacil</li><li>Navas</li><li>Shyju</li></ul></div>
+                    <div class="team-card"><div class="team-logo placeholder-logo">SPARTANS</div><h3>SPARTANS</h3><ul class="roster"><li class="captain">Vinod (C)</li><li>Jinil</li><li>Anand John</li><li>Deepesh</li><li>Rajan</li><li>Rasheed</li><li>Manoj Kumar</li><li>Anand</li><li>Mahipal</li><li>Pradeep</li></ul></div>
+                    <div class="team-card"><img src="Rising Stars.jpeg" class="team-logo"><h3>RISING STARS</h3><ul class="roster"><li class="captain">Balu (C)</li><li>Manoj K V</li><li>Vicky</li><li>Sangeeth</li><li>Govind</li><li>Shijith</li><li>Jacob</li><li>Shafeek</li><li>Antony</li><li>Vishnu</li></ul></div>
+                    <div class="team-card"><img src="SHUTTLE KINGS.jpeg" class="team-logo"><h3>SHUTTLE KINGS</h3><ul class="roster"><li class="captain">Johnson (C)</li><li>Biju</li><li>Jayanth</li><li>Hashim</li><li>Prasanth</li><li>Sajith</li><li>Bijoy</li><li>Pramod</li><li>Jolly</li><li>Manoj A M</li></ul></div>
+                    <div class="team-card"><img src="THUNDERBOLT.jpeg" class="team-logo"><h3>THUNDERBOLT</h3><ul class="roster"><li class="captain">Bebin (C)</li><li>Nibin</li><li>Anush</li><li>Ajay</li><li>Pratheesh</li><li>Dinoop</li><li>Santhosh</li><li>Sukhlal</li><li>Peter</li><li>Jude</li></ul></div>
+                    <div class="team-card"><img src="Shuttle Stormers.jpeg" class="team-logo"><h3>SHUTTLE STORMERS</h3><ul class="roster"><li class="captain">Binu (C)</li><li>Upendra</li><li>Sujith</li><li>Santhosh Unni</li><li>Jenson</li><li>Rajiv</li><li>Vinu Vijay</li><li>Nandakumar</li><li>Jithesh</li><li>Binoy</li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene footer-scene">
+             <div class="text-content">
+                <h2>READY?</h2>
+                <p>Championship Trophy & Cash Prizes Await.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
