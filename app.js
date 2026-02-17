@@ -23,6 +23,34 @@ const warmLight = new THREE.DirectionalLight(0xffae00, 1);
 warmLight.position.set(0, -5, 2);
 scene.add(warmLight);
 
+
+// --- ADD BACKGROUND PARTICLES (Sparks/Fiery Dust) ---
+const particlesGeometry = new THREE.BufferGeometry();
+const particlesCount = 800; // Number of sparks
+const posArray = new Float32Array(particlesCount * 3);
+
+for(let i = 0; i < particlesCount * 3; i++) {
+    // Spread particles randomly across a wide 3D area (30 units wide)
+    posArray[i] = (Math.random() - 0.5) * 30; 
+}
+
+particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+// Create the glowing material
+const particlesMaterial = new THREE.PointsMaterial({
+    size: 0.04, // Size of the sparks
+    color: 0xffae00, // Golden/Fiery orange to match your ABL theme
+    transparent: true,
+    opacity: 0.8,
+    blending: THREE.AdditiveBlending, // This makes them glow like fire
+    depthWrite: false // Ensures particles behind the shuttlecock look correct
+});
+
+const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+scene.add(particlesMesh);
+// ----------------------------------------------------
+
+
 // LOAD THE REAL 3D MODEL (.GLB)
 const shuttleGroup = new THREE.Group();
 scene.add(shuttleGroup);
@@ -70,8 +98,15 @@ const clock = new THREE.Clock();
 function animate() {
     const elapsedTime = clock.getElapsedTime();
     requestAnimationFrame(animate);
+    
+    // Constant floating motion for the shuttlecock
     shuttleGroup.position.y += Math.sin(elapsedTime * 1.5) * 0.002;
     shuttleGroup.rotation.y += 0.001; 
+    
+    // Slowly rotate the entire particle field so the sparks drift!
+    particlesMesh.rotation.y = elapsedTime * 0.03;
+    particlesMesh.rotation.x = elapsedTime * 0.01;
+
     renderer.render(scene, camera);
 }
 animate();
