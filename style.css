@@ -213,3 +213,118 @@ strong { color: #ffffff; font-weight: 600; }
     margin-top: 15px;
 }
 .match-footer span { color: #fff; }
+
+/* =========================================
+   RULES PAGE STYLING
+========================================= */
+
+.rules-page-bg {
+    background: radial-gradient(circle at top right, #1a1510 0%, #050505 100%);
+    min-height: 100vh;
+}
+
+.rules-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.rules-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.rule-detail-card {
+    background: rgba(25, 25, 25, 0.7);
+    border: 1px solid rgba(255, 174, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.rule-detail-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 174, 0, 0.6);
+}
+
+.rule-detail-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffae00;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.rule-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rule-list li {
+    font-size: 1.8rem;
+    color: #ddd;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.3;
+}
+
+.rule-list li::before {
+    content: "▸";
+    color: #ffae00;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.8rem;
+    text-align: left;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rule-table th {
+    background: rgba(255, 174, 0, 0.1);
+    color: #ffae00;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.rule-table td {
+    padding: 10px 15px;
+    color: #ccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rule-note {
+    font-size: 1.6rem;
+    color: #aaa;
+    line-height: 1.4;
+}
+
+.groups-split {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.groups-split p {
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .rules-masonry { grid-template-columns: 1fr; }
+}
