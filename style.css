@@ -47,3 +47,169 @@ strong { color: #ffffff; font-weight: 600; }
 .roster { list-style: none; width: 100%; text-align: center; }
 .roster li { padding: 6px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-size: 1.4rem; color: #ccc; }
 .roster .captain { color: #ffae00; font-weight: 600; font-size: 1.6rem; text-transform: uppercase; border-bottom: 2px solid rgba(255, 174, 0, 0.4); margin-bottom: 8px; padding-bottom: 12px;}
+
+/* =========================================
+   FIXTURES PAGE STYLING
+========================================= */
+
+.fixtures-page {
+    background: radial-gradient(circle at top center, #1a1005 0%, #050505 100%);
+    min-height: 100vh;
+}
+
+.fixtures-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(255, 174, 0, 0.2);
+}
+
+.back-btn {
+    color: #ffae00;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid #ffae00;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.back-btn:hover {
+    background: #ffae00;
+    color: #000;
+}
+
+.fixtures-logo {
+    height: 60px;
+}
+
+.fixtures-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.center-text { text-align: center; margin-bottom: 40px; }
+
+/* Tables Setup */
+.tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.group-table-card {
+    flex: 1;
+    min-width: 320px;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.group-table-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffae00;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.group-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.group-table th { color: #fff; border-bottom: 2px solid #ffae00; padding: 10px; }
+.group-table td { color: #ccc; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 10px; }
+.group-table td:first-child { text-align: left; }
+.pts-col { color: #ffae00; font-weight: bold; font-size: 2rem; }
+
+/* Subtle Fire Animation Keyframes */
+@keyframes subtleFire {
+    0% { box-shadow: 0 0 4px rgba(255, 174, 0, 0.3), inset 0 0 6px rgba(255, 50, 0, 0.1); border-color: rgba(255, 174, 0, 0.3); }
+    50% { box-shadow: 0 0 12px rgba(255, 174, 0, 0.6), inset 0 0 10px rgba(255, 0, 0, 0.2); border-color: rgba(255, 174, 0, 0.8); }
+    100% { box-shadow: 0 0 4px rgba(255, 174, 0, 0.3), inset 0 0 6px rgba(255, 50, 0, 0.1); border-color: rgba(255, 174, 0, 0.3); }
+}
+
+/* Fixtures Schedule Grid */
+.schedule-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: #ffae00;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fixtures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+}
+
+/* The Animated Card */
+.fire-card {
+    background: #111;
+    border-radius: 12px;
+    border: 1px solid #ffae00;
+    cursor: pointer;
+    overflow: hidden;
+    animation: subtleFire 3s infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+.fire-card:hover {
+    transform: scale(1.02);
+}
+
+.card-summary {
+    padding: 20px;
+    text-align: center;
+}
+
+.match-date { color: #aaa; font-size: 1.6rem; letter-spacing: 1px; }
+.match-teams { font-family: 'Oswald', sans-serif; font-size: 2.2rem; margin: 10px 0; color: #fff; }
+.vs { color: #ffae00; font-size: 1.8rem; margin: 0 10px; }
+.expand-hint { color: #888; font-size: 1.4rem; }
+
+/* Expandable Details Area */
+.card-details {
+    max-height: 0;
+    opacity: 0;
+    background: #0a0a0a;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-in, padding 0.3s ease;
+}
+
+.fire-card.open .card-details {
+    max-height: 500px;
+    opacity: 1;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 174, 0, 0.3);
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.details-table th { color: #ffae00; padding-bottom: 8px; border-bottom: 1px dotted #555; font-weight: 400; }
+.details-table td { padding: 8px 5px; color: #ddd; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.trump { color: #ffae00 !important; }
+
+.match-footer {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #aaa;
+    margin-top: 15px;
+}
+.match-footer span { color: #fff; }
