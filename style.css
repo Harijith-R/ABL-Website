@@ -328,3 +328,34 @@ strong { color: #ffffff; font-weight: 600; }
 @media (max-width: 768px) {
     .rules-masonry { grid-template-columns: 1fr; }
 }
+
+/* Fix for disappearing footer and mobile alignment */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal swipe on small screens */
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 10px;
+}
+.details-table {
+    min-width: 450px; /* Ensures table doesn't squish too much */
+}
+.fire-card.open .card-details {
+    max-height: none; /* Changed from fixed 500px to allow content to breathe */
+    opacity: 1;
+    padding: 15px; /* Slightly tighter for mobile */
+    display: flex;
+    flex-direction: column;
+}
+/* Responsive adjustments for the grid */
+@media (max-width: 600px) {
+    .fixtures-grid {
+        grid-template-columns: 1fr; /* Single column on phones */
+        gap: 15px;
+    }
+    .match-teams {
+        font-size: 1.8rem; /* Slightly smaller text for fit */
+    }
+    .fixtures-wrapper {
+        padding: 20px 10px;
+    }
+}
