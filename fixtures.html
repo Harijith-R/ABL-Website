@@ -1077,6 +1077,24 @@
                 if (!wasOpen) card.classList.add('open');
             });
         });
+
+        // Automatically sort Points Tables based on the Points column
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.group-table').forEach(table => {
+                const tbody = table.querySelector('tbody') || table;
+                // Get all rows except the first one (header)
+                const rows = Array.from(tbody.querySelectorAll('tr')).slice(1);
+                
+                rows.sort((a, b) => {
+                    const ptsA = parseInt(a.querySelector('.pts-col').textContent) || 0;
+                    const ptsB = parseInt(b.querySelector('.pts-col').textContent) || 0;
+                    return ptsB - ptsA; // Descending order (highest points first)
+                });
+
+                // Re-append rows in sorted order
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
     </script>
 </body>
 
