@@ -24,11 +24,84 @@
 
     <main class="fixtures-wrapper">
         <div class="section-header center-text">
-            <h2>SEASON 5 DASHBOARD</h2>
-            <p>Live Standings & Match Results</p>
+            <h2>SEASON 5 CONCLUDED</h2>
+            <p>Champions & Special Awards</p>
         </div>
 
-        <!-- POINTS TABLES -->
+        <!-- TOURNAMENT CHAMPIONS -->
+        <div class="schedule-container" style="margin-top: 60px;">
+            <h3 class="schedule-title">SEASON 5 CHAMPIONS & RUNNER-UP</h3>
+            <div class="fixtures-grid">
+                
+                <div class="fire-card" style="cursor: default; border-color: #ffd700;">
+                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
+                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: #ffd700; margin-bottom: 15px; letter-spacing: 2px;">WINNERS</h4>
+                        <img src="Winners.jpeg" alt="Winners: Rising Stars" style="width: 100%; border-radius: 8px; border: 3px solid #ffd700; margin-bottom: 15px;">
+                        <p style="font-size: 2.2rem; font-weight: bold; color: #fff; margin: 0; text-transform: uppercase;">RISING STARS</p>
+                    </div>
+                </div>
+
+                <div class="fire-card" style="cursor: default; border-color: #c0c0c0;">
+                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
+                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: #c0c0c0; margin-bottom: 15px; letter-spacing: 2px;">RUNNER-UP</h4>
+                        <img src="Runner-Up.jpeg" alt="Runner-Up: Spartans" style="width: 100%; border-radius: 8px; border: 3px solid #c0c0c0; margin-bottom: 15px;">
+                        <p style="font-size: 2.2rem; font-weight: bold; color: #fff; margin: 0; text-transform: uppercase;">SPARTANS</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SPECIAL AWARDS -->
+        <div class="schedule-container" style="margin-top: 60px;">
+            <h3 class="schedule-title">SEASON 5 SPECIAL AWARDS</h3>
+            <div class="fixtures-grid">
+                
+                <div class="fire-card" style="cursor: default;">
+                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
+                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">BEST PAIR</h4>
+                        <img src="Best_Pair.jpeg" alt="Best Pair" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
+                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">VIVEK & AKASH</p>
+                    </div>
+                </div>
+
+                <div class="fire-card" style="cursor: default;">
+                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
+                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">BEST UMPIRE</h4>
+                        <img src="Best_Umpire.jpeg" alt="Best Umpire" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
+                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">GANESH</p>
+                    </div>
+                </div>
+
+                <div class="fire-card" style="cursor: default;">
+                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
+                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">EMERGING PLAYER</h4>
+                        <img src="Emerging_Player.jpeg" alt="Emerging Player" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
+                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">GOVIND</p>
+                    </div>
+                </div>
+
+                <div class="fire-card" style="cursor: default;">
+                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
+                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">BEST PLAYER</h4>
+                        <img src="Best_Player.jpeg" alt="Best Player" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
+                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">VISHNU</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <!-- SEASON 5 DASHBOARD (COLLAPSIBLE) -->
+        <div class="schedule-container dashboard-wrapper" style="margin-top: 60px;">
+            <div class="dashboard-header" style="border: 1px solid #ffae00; background: #111; border-radius: 12px; cursor: pointer; text-align: center; padding: 25px; transition: transform 0.3s ease;">
+                <h3 style="font-family: 'Oswald', sans-serif; font-size: 3rem; color: #ffae00; margin: 0; letter-spacing: 1px;">SEASON 5 DASHBOARD</h3>
+                <p style="font-size: 1.6rem; color: #aaa; margin-top: 5px; margin-bottom: 0;">Points Tables & Match Results</p>
+                <span class="expand-hint" style="color: #888; font-size: 1.4rem; display: block; margin-top: 10px;">Click to expand ▾</span>
+            </div>
+            <div class="dashboard-content" style="max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.4s ease-out, opacity 0.3s ease-in, padding 0.3s ease; border-top: 1px solid transparent;">
+                <div style="padding: 30px;">
+<!-- POINTS TABLES -->
         <div class="tables-container">
             <div class="group-table-card">
                 <h3>GROUP A</h3>
@@ -1071,81 +1144,61 @@
             </div>
         </div>
 
-        <!-- TOURNAMENT CHAMPIONS -->
-        <div class="schedule-container" style="margin-top: 60px;">
-            <h3 class="schedule-title">SEASON 5 CHAMPIONS & RUNNER-UP</h3>
-            <div class="fixtures-grid">
-                
-                <div class="fire-card" style="cursor: default; border-color: #ffd700;">
-                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
-                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: #ffd700; margin-bottom: 15px; letter-spacing: 2px;">WINNERS</h4>
-                        <img src="Winners.jpeg" alt="Winners: Rising Stars" style="width: 100%; border-radius: 8px; border: 3px solid #ffd700; margin-bottom: 15px;">
-                        <p style="font-size: 2.2rem; font-weight: bold; color: #fff; margin: 0; text-transform: uppercase;">RISING STARS</p>
+        
                     </div>
                 </div>
-
-                <div class="fire-card" style="cursor: default; border-color: #c0c0c0;">
-                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
-                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.5rem; color: #c0c0c0; margin-bottom: 15px; letter-spacing: 2px;">RUNNER-UP</h4>
-                        <img src="Runner-Up.jpeg" alt="Runner-Up: Spartans" style="width: 100%; border-radius: 8px; border: 3px solid #c0c0c0; margin-bottom: 15px;">
-                        <p style="font-size: 2.2rem; font-weight: bold; color: #fff; margin: 0; text-transform: uppercase;">SPARTANS</p>
-                    </div>
-                </div>
-
             </div>
         </div>
 
-        <!-- SPECIAL AWARDS -->
-        <div class="schedule-container" style="margin-top: 60px;">
-            <h3 class="schedule-title">SEASON 5 SPECIAL AWARDS</h3>
-            <div class="fixtures-grid">
-                
-                <div class="fire-card" style="cursor: default;">
-                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
-                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">BEST PAIR</h4>
-                        <img src="Best_Pair.jpeg" alt="Best Pair" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
-                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">VIVEK & AKASH</p>
-                    </div>
-                </div>
-
-                <div class="fire-card" style="cursor: default;">
-                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
-                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">BEST UMPIRE</h4>
-                        <img src="Best_Umpire.jpeg" alt="Best Umpire" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
-                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">GANESH</p>
-                    </div>
-                </div>
-
-                <div class="fire-card" style="cursor: default;">
-                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
-                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">EMERGING PLAYER</h4>
-                        <img src="Emerging_Player.jpeg" alt="Emerging Player" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
-                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">GOVIND</p>
-                    </div>
-                </div>
-
-                <div class="fire-card" style="cursor: default;">
-                    <div class="card-summary" style="display: flex; flex-direction: column; align-items: center; padding: 25px;">
-                        <h4 style="font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: #ffae00; margin-bottom: 15px; letter-spacing: 1px;">BEST PLAYER</h4>
-                        <img src="Best_Player.jpeg" alt="Best Player" style="width: 100%; border-radius: 8px; border: 2px solid #333; margin-bottom: 15px;">
-                        <p style="font-size: 2rem; font-weight: bold; color: #fff; margin: 0;">VISHNU</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </main>
 
     <script>
         document.querySelectorAll('.fire-card').forEach(card => {
-            card.addEventListener('click', () => {
+            // Ignore static cards (awards and winners)
+            if (card.style.cursor === 'default') return;
+            
+            card.addEventListener('click', (e) => {
+                // Prevent bubbling if needed
+                e.stopPropagation();
+                
                 const wasOpen = card.classList.contains('open');
-                // Close all cards first
-                document.querySelectorAll('.fire-card').forEach(c => c.classList.remove('open'));
+                // Close all match cards first
+                document.querySelectorAll('.fire-card').forEach(c => {
+                    if (c.style.cursor !== 'default') {
+                        c.classList.remove('open');
+                    }
+                });
                 // Toggle the clicked one
                 if (!wasOpen) card.classList.add('open');
+                // Let it toggle off if it was open!
+                else card.classList.remove('open');
             });
         });
+
+        // Dashboard Toggle Logic
+        const dbHeader = document.querySelector('.dashboard-header');
+        const dbContent = document.querySelector('.dashboard-content');
+        if (dbHeader && dbContent) {
+            dbHeader.addEventListener('click', () => {
+                const isOpen = dbContent.classList.contains('open');
+                if (!isOpen) {
+                    dbContent.classList.add('open');
+                    dbContent.style.maxHeight = 'none'; // allow it to be big
+                    dbContent.style.opacity = '1';
+                    dbContent.style.borderColor = 'rgba(255, 174, 0, 0.3)';
+                    dbHeader.querySelector('.expand-hint').textContent = 'Click to collapse ▴';
+                } else {
+                    dbContent.classList.remove('open');
+                    dbContent.style.maxHeight = '0';
+                    dbContent.style.opacity = '0';
+                    dbContent.style.borderColor = 'transparent';
+                    dbHeader.querySelector('.expand-hint').textContent = 'Click to expand ▾';
+                }
+            });
+            // Hover effect
+            dbHeader.addEventListener('mouseenter', () => dbHeader.style.transform = 'scale(1.02)');
+            dbHeader.addEventListener('mouseleave', () => dbHeader.style.transform = 'scale(1)');
+        }
 
         // Automatically sort Points Tables based on the Points column
         document.addEventListener('DOMContentLoaded', () => {
